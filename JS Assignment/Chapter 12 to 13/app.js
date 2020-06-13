@@ -1,17 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chapter 12 to 13</title>
-</head>
-<body>
-
-	<script type="text/javascript">
-		
-	// Chap 12 -13
+// Chap 12 -13
 
 	// Write a program that takes a character (number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter
 
-	var ch = prompt("Enter a character");
+	var char = prompt("Enter the character to check whether the given input is a number, uppercase letter or lower case letter.");
+        char.charCodeAt(0);
+
+        if (char >= 48 && char <= 57) {
+            document.write("The given charecter is a number");
+        }
+        else if (char >= 65 && char <= 97) {
+            document.write("The given charecter is a uppercaseleetr");
+        }
+        else if (char >= 97 && char <= 122) {
+            document.write("The given charecter is a lowercaseletter");
+        }
+
+
+        document.write("<br>" + "<br>");
 
 
 
@@ -33,6 +38,8 @@
 		document.write("Equal numbers")
 	}
 
+	document.write("<br>" + "<br>");
+
 
 
 	// Write a program that takes input a number from user & state whether the number is positive, negative or zero
@@ -52,19 +59,23 @@
 		document.write("zero")
 	}
 
+	document.write("<br>" + "<br>");
+
 
 	// Write a program that takes a character (i.e. string of length 1) and returns true if it is a vowel, false 
 
 
-	var ch = prompt("Enter a character")
+	var alphabet = +prompt("Enter the alphabet to check it is vowel or not");
+
+        if (alphabet == "a" || alphabet == "e" || alphabet == "i" || alphabet == "o" || alphabet == "u" || alphabet == "A" || alphabet == "E" || alphabet == "I" || alphabet == "O" || alphabet == "U") {
+            document.write("The given alphabet is vowel");
+        }
+        else {
+            document.write("The given alphabet is not a vowel");
+        }
 
 
-	if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
-		return true
-	}
-	else{
-		return false
-	}
+	document.write("<br>" + "<br>");
 
 
 	// password program
@@ -74,12 +85,19 @@
 
 	var user_input = prompt("Please enter your password:");
 
-	if (user_input===password){
+	if (user_input=="") {
+		document.write("Please enter your password")
+	}
+
+	else if (user_input===password){
 		document.write("Correct password")
 	}
 	else{
 		document.write("Please Enter your correct password")
 	}
+
+
+	document.write("<br>" + "<br>");
 
 
 	// 6. This if/else statement does not work. Try to fix it: 
@@ -94,6 +112,8 @@
 	}
 
 	document.write(greeting)
+
+	document.write("<br>" + "<br>");
 
 
 	// Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statement
@@ -113,8 +133,3 @@
 	else{
 		document.write("Good Night")
 	}
-
-	</script>
-
-</body>
-</html>

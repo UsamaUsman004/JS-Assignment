@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chapter 6 to 9</title>
-</head>
-<body>
-	<script type="text/javascript">
-		 // Chapter 6 to 9
+	 // Chapter 6 to 9
 
 	 // Write a program to take a number in a variable, do the required arithmetic to display the following result in your browser:
 
@@ -47,7 +40,7 @@
 
 	// 5. Write a program to take input a number from user & display it’s multiplication table on your browser. If user does not enter a new number, multiplication table of 5 should be displayed by default.
 
-	var table = prompt("Enter your Name:",5);
+	var table = prompt("Enter your required Table :",5);
 
 	document.write(	"Table of "+table+ "<br>"+table + " x 1 = ",(table*1)+"<br>" + 
 					table+ " x 2 = ",(table*2)+"<br>"+ 
@@ -129,10 +122,3 @@
 
         document.write("</Table>");
 
-
-
-
-	</script>
-
-</body>
-</html>

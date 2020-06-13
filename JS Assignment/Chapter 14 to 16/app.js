@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chapter 14 to 16</title>
-</head>
-<body>
+// 1. Declare an empty array using JS literal notation to store student names in future. 
+        var  myArr = [];
 
 
-	<select id="Phone">
-	    <option>Choose a phone</option>
-	</select>
-
-
-	
-	<script type="text/javascript">
-		
-	// 1. Declare an empty array using JS literal notation to store student names in future
-
-	var std = {};
-
-	// // Declare an empty array using JS object notation to store student names in future
-
-	var std1=[];
+        // // 2. Declare an empty array using JS object notation to store student names in future. 
+        // var xyz = newArray();
 
 	// // Declare and initialize a strings array
 
@@ -156,13 +139,8 @@
 
 var myArray = ["Apple", "Samsung", "Nokia", "Motorolla", "Huawei"];
 
-var dropdown = document.getElementById("Phone");
+// var dropdown = document.getElementById("Phone");
 
-for (var i = 0; i < myArray.length; ++i) {
-    dropdown[dropdown.length] = new Option(myArray[i], myArray[i]);
-}
-
-	</script>
-
-</body>
-</html>
+// for (var i = 0; i < myArray.length; ++i) {
+//     dropdown[dropdown.length] = new Option(myArray[i], myArray[i]);
+// }

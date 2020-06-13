@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chapter 1</title>
-	<script type="text/javascript">
-		alert('Head Section Alert')
-	</script>
-</head>
-<body>
-
-
-	<script type="text/javascript">
-		// Chapter1
 
 	// 1. Write a script to greet your website visitor using JS alert box
 	alert("Greetings");
@@ -37,15 +24,6 @@
 	7. Practice placement of script tag element in following sections of your project in exercise 6:
 	 a. Head 
 	 b. Body (before your page’s HTML) 
-	 c. Body (inside your page’s HTML) d. Body (after your page’s HTML) */\
+	 c. Body (inside your page’s HTML) d. Body (after your page’s HTML) */
 
-		alert('Inside Body Section Alert')
-	</script>
-
-</body>
-
-
-<script type="text/javascript">
-		alert('After Body Section Alert')
-</script>
-</html>
+		

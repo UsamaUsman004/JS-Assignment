@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chapter 4</title>
-</head>
-<body>
-	<script type="text/javascript">
 		// Chapter 4
 
 
@@ -41,8 +34,3 @@
 
 	var pageHeading = "Rules for naming JS variables";
 	document.write("<h1>"+pageHeading+"</h1>"+ "<p>Variable names can only contain numbers, $ and _.For example $my_1stVariable <br> Variables must begin with a letter, $ or _. For example $name, _name or name! <br>Variable names are case sensitive <br>Variable names should not be JS keywords</p>");
-
-	</script>
-
-</body>
-</html>

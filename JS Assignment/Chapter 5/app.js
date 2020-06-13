@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chapter 5</title>
-</head>
-<body>
-	<script type="text/javascript">
-		
-	// Chapter 5 
+// Chapter 5 
 
 
 	var Var1 = 5;
@@ -103,6 +95,8 @@
 
 	var Total = ((item1*q1)+(item2*q2)+shipping);
 
+	document.write("<br><br>Price of item1 is :"+item1 +"<br> Quantity of item1 is "+q1+"<br>Price of item2 is :"+item2 +"<br> Quantity of item2 is "+q2+"<br>shipping charges:"+shipping+"<br>")
+
 	document.write("Total cost of your order is : "+Total); 
 
 
@@ -161,8 +155,3 @@
 	 var amount = 3;
 	 var total = (max_age-age)*3;
 	 document.write("favorite snack: "+snack + "<br>Current Age "+age + "<br> Estimated Age "+max_age +"<br>amount of snacks "+amount + "<br> You will need :"+total +" till age of " +max_age);
-
-	</script>
-
-</body>
-</html>

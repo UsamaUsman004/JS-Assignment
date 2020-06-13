@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chapter 2</title>
-</head>
-<body>
-
-	<script type="text/javascript">
-		
+	
 	// Chapter 2
 
 	// 1. Declare a variable called username.
@@ -60,7 +52,3 @@
 	// 9. Store following string in a variable and show in alert and browser through JS
 	var myPattern = '▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬';
 	alert(myPattern);
-	</script>
-
-</body>
-</html>

@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chapter 9 to 11</title>
-</head>
-<body>
-	<script type="text/javascript">
 			// Chapter 9-11
 
 
@@ -20,6 +13,8 @@
 		document.write("Welcome to "+city);
 	}
 
+	document.write("<br><br>");
+
 
 	// 2. Write a program to take “gender” as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma’am
 
@@ -33,6 +28,8 @@
 	else{
 		document.write("Good Morning Sir")
 	}
+
+	document.write("<br><br>");
 
 
 	// 3. Write a program to take input color of road traffic signal from the user & show the message according to this table:
@@ -51,6 +48,8 @@
 		document.write("Move Now");
 	}
 
+	document.write("<br><br>");
+
 
 	// 4. Write a program to take input remaining fuel in car (in litres) from user. If the current fuel is less than 0.25litres, show the message “Please refill the fuel in your car” 
 
@@ -63,6 +62,8 @@
 	else{
 		document.write("Save Journey")
 	}
+
+	document.write("<br><br>");
 
 
 	// 5. Run this script, & check whether alert message would be displayed or not. Record the outputs. a. 
@@ -122,12 +123,22 @@
 		}
 
 
+		document.write("<br><br>");
+
+
 	// 6. Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:
 
 
-	
+		var obtainedMarks = +prompt("Enter Obtained Marks in three subjects: ");
+        var totalMarks = +prompt("Enter total Marks: ");
+        var percent = (obtainedMarks / totalMarks) * 100;
 
-	var percent = prompt("Enter your Percentage:")
+        document.write("<h3>" + "Mark Sheet" + "<h3>");
+        document.write("Total Marks: " + totalMarks + "</br>");
+        document.write("Marks Obtained: " + obtainedMarks + "</br>");
+        document.write("Percentage: " + percent + "</br>");
+
+
 	if (percent>=80){
 		document.write("Grade : A1 <br>Remarks : Excellent");
 	}
@@ -144,6 +155,9 @@
 	}
 
 
+	document.write("<br><br>");
+
+
 	// 7. Guess game
 
 
@@ -153,16 +167,19 @@
 
 
 	if (secret==SecretNumber){
-		document.write("Bingo! Correct answer");
+		document.write("<br>Bingo! Correct answer");
 	}
 
 	else if (++secret == SecretNumber){
-		document.write("Close enough to the correct answer");
+		document.write("<br>Close enough to the correct answer");
 	}
 
 	else{
-		document.write("better luck next time");
-	// }
+		document.write("<br>better luck next time");
+	}
+
+
+	document.write("<br><br>");
 
 
 	// 8. Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.
@@ -180,6 +197,9 @@
 	}
 
 
+	document.write("<br><br>");
+
+
 	// 9. Write a program that checks whether the given input is an even number or an odd number
 
 
@@ -192,6 +212,9 @@
 	else{
 		document.write("Odd Number");
 	}
+
+
+	document.write("<br><br>");
 
 
 	//10. Write a program that takes temperature as input and shows a message based on following criteria
@@ -212,11 +235,47 @@
 	}
 
 
+	document.write("<br><br>");
+
+
 	// Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input: a. First number b. Second number c. Operation (+, -, *, /, %) Compute & show the calculated result to user
 
 
+		var a = +prompt("Enter First Number");
+        var b = +prompt("Enter Second Number");
+        var operation = prompt("Enter opertion you want to perform","+, -, *, /, %");
+        var result;
 
-	</script>
+        if(operation == "+")
+        {
+            result = a + b;
+            document.write("The sum of" + " " + a + " " + "and"  + " " + b + " " + "is:"  + " " + result)
+        }
+        else if(operation == "-")
+        {
+            result = a - b;
+            document.write("The subtraction of" + " " + a + " " + "and"  + " " + b + " " + "is:"  + " " + result)
+        }
+        else if(operation == "*")
+        {
+            result = a * b;
+            document.write("The multiplication of" + " " + a + " " + "and"  + " " + b + " " + "is:"  + " " + result)
+        }
+        else if(operation == "/")
+        {
+            result = a / b;
+            document.write("The division of" + " " + a + " " + "and"  + " " + b + " " + "is:"  + " " + result)
+        }
+        else if(operation == "%")
+        {
+            result = a % b;
+            document.write("The reminder of" + " " + a + " " + "and"  + " " + b + " " + "is:"  + " " + result)
+        }
+        else
+        {
+            document.write("You enter wrong operation")
+        }
 
-</body>
-</html>
+        document.write("<br>" + "<br>");
+
+

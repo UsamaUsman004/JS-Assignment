@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chapter 3</title>
-</head>
-
-<body>
-	<script type="text/javascript">
-		// 1. Declare a variable called age & assign to it your age. Show your age in an alert box.
+// 1. Declare a variable called age & assign to it your age. Show your age in an alert box.
 	var age = 21;
 	alert('I am '+age+' years old');
 
@@ -32,8 +24,3 @@
 
 
 	document.write(VisitorName+" ordered "+Quantity+ " "+ ProductTitle +"(s) on XYZ Clothing store")
-	</script>
-
-</body>
-
-</html>
