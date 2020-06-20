@@ -136,6 +136,54 @@ alert("Name: "+uName);
 // If the password does not meet above requirements, prompt the user to enter a valid password.
 // For character codes of a-z, A-Z & 0-9, refer to ASCII table at the end of this document.
 
+var password = prompt("Enter your password")
+
+var numbers = false;
+var lowerCaseLetter = false;
+var upperCaseLetter = false;
+var length = true;
+var firstChar = true;
+
+
+for (x = 0; x <= password.length - 1; x++) {
+    if (password.charCodeAt(x) >= 97 && password.charCodeAt(x) <= 122) {
+        lowerCaseLetter = true;
+    }
+    if (password.charCodeAt(x) >= 48 && password.charCodeAt(x) <= 57) {
+        numbers = true;
+    }
+    if (password.charCodeAt(x) >= 65 && password.charCodeAt(x) <= 90) {
+        upperCaseLetter = true;
+    }
+
+}
+
+if (password.length <= 6) {
+    length = false;
+}
+
+for (i = 0; i <= 10; i++) {
+    if (password.startsWith(i, 0)) {
+        firstChar = false;
+    }
+}
+
+if (numbers == false || upperCaseLetter == false || lowerCaseLetter == false || length == false || firstChar == false) {
+    alert("you enter an invalid password")
+    if (numbers == false || upperCaseLetter == false || lowerCaseLetter == false) {
+        alert("password must contain a upeercase letter, a lower case letter and a number")
+    }
+    if (length == false) {
+        alert("lenght of password must be maximum 6 characters")
+    }
+    if (firstChar == false) {
+        alert("password can not start with a number")
+    }
+}
+else {
+    alert("password approved")
+}
+
 
 
 
