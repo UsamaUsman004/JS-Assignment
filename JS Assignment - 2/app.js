@@ -289,11 +289,26 @@ var decision = Math.floor(toss)
 var RandomNumber = Math.random() * 100;
 var RandomResult = Math.floor(RandomNumber)
 document.write("RandomNumber b/w 1 and 100:"+RandomResult)
+document.write("<br>" + "<br>");
 
 // 7. Write a program that asks the user about his weight. Parse the user input and display his weight in your browser. 
 
-var weight = prompt("Enter your Weight");
-document.write("The weight of user is :" + weight.toString());
+var weight = prompt("Enter your weight")
+var ResultValue = "";
+
+document.write("The weight of user is" + " ");
+
+for (i = 0; i <= weight.length - 1; i++) {
+    if (weight.charCodeAt(i) >= 48 && weight.charCodeAt(i) <= 57 || weight.charCodeAt(i) == 46) {
+        ResultValue = weight[i];
+        document.write(ResultValue);
+    }
+
+}
+document.write(" " + "kilograms");
+
+
+document.write("<br>" + "<br>");
 
 // 8. Write a program that stores a random secret number from 1 to 10 in a variable. Ask the user to input a number between 1 and 10. If the user input equals the secret number, congratulate the user.
 
