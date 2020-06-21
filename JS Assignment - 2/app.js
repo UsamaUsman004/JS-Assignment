@@ -421,6 +421,8 @@ pYear.setFullYear(pYear.getFullYear()-100);
 alert("100 back it was "+pYear)
 document.write("<br><br>")
 
+// TASK 13
+
 var UserAge = new Date(prompt("Enter your DOB","Jan 1 ,1970"));
 var age = (today - UserAge)/(1000 * 60 * 60 * 24*365);
 
