@@ -576,7 +576,10 @@ function calculateHypotenuse(base,perp){
     var hyp = calculateSquare(base)+calculateSquare(perp)
     return Math.sqrt(hyp)
 }
-document.write("Value of Hypotenuse is : "+calculateHypotenuse(3,4))
+
+base = +prompt("Enter the base value: ")
+perp = +prompt("Enter the perpendicular value: ")
+document.write("Value of Hypotenuse is : "+calculateHypotenuse(base,perp))
 document.write("<br><br>")
 
 // // Write a function that calculates the area of a rectangle.
