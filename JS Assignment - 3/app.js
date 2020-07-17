@@ -3,7 +3,7 @@
 // // 1. Write a custom function power ( a, b ), to calculate the value of a raised to b.
 
 // function PowerFunction(base,power){
-// 	return (base**power);
+//  return (base**power);
 // }
 // var num = +prompt('Enter the Number:');
 // var power = +prompt('Enter the power:');
@@ -75,8 +75,8 @@
 // var string = "pakistan zindabad";
 
 // function deleteVowels(string){
-// 	string = string.replace( /[aeiou]/g, '' );
-// 	alert('After Removal Of Vowels from Strings = '+string);
+//  string = string.replace( /[aeiou]/g, '' );
+//  alert('After Removal Of Vowels from Strings = '+string);
 // }
 // deleteVowels(string);
 
@@ -128,11 +128,11 @@
 // var InputCash = +prompt('Enter the Cash Amount');
 
 // function notes(cash){
-// 	var hundreds = cash / 100;
-// 	var fifty = (cash%100) / 50;
-// 	var ten = ((cash%100)%50)/10;
+//  var hundreds = cash / 100;
+//  var fifty = (cash%100) / 50;
+//  var ten = ((cash%100)%50)/10;
 
-// 	alert('Notes of hundreds = '+ ~~hundreds + '\nNotes of Fifty = '+ ~~fifty +'\nNotes of Ten = '+ten);
+//  alert('Notes of hundreds = '+ ~~hundreds + '\nNotes of Fifty = '+ ~~fifty +'\nNotes of Ten = '+ten);
 // }
 // notes(InputCash);
 
@@ -161,4 +161,30 @@ function minus() {
 function add() {
     clicks += 1;
     document.getElementById("clicks").innerHTML = clicks;
+}
+
+
+// Assignment # 49-52
+
+
+function info() {
+    console.log('text')
+    var FName = document.getElementById('inputFName').value;
+    var LName = document.getElementById('inputLName').value;
+    var email = document.getElementById('inputEmail').value;
+    var address = document.getElementById('inputAddress').value;
+    var city = document.getElementById('inputCity').value;
+    var zip = document.getElementById('inputZip').value;
+
+    document.getElementById('FullName').innerHTML = FName + LName;
+    document.getElementById('Email').innerHTML = email;
+    document.getElementById('Address').innerHTML = address + ',' + city + ',' + zip
+
+}
+
+function detail() {
+
+    var detailed = "<p> Name : Dettol</p><p> Item ID : 101</p><ol><li>Kills Bacteria</li><li>Saves from Corona</li><li>Keeps pleasant smell</li></ol>";
+    document.getElementById("details").innerHTML = detailed;
+
 }

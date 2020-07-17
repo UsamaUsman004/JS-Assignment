@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="container">
-    	<h3 class="text-center">3. Display 10 student records in table and each row should contain a delete button. If you click on a button to delete a record, entire row should be deleted. </h3>
+        <h3 class="text-center">3. Display 10 student records in table and each row should contain a delete button. If you click on a button to delete a record, entire row should be deleted. </h3>
         <table class="table" id="students">
             <thead>
                 <tr>
@@ -113,7 +113,7 @@
         </table>
     </div>
     <div class="container">
-    	<h3 class="text-center">4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout.</h3>
+        <h3 class="text-center">4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout.</h3>
         <div class="row">
             <div class="col-md-3">
                 <img class="img-fluid" src="https://olist-uc.feednews.com/upload/20200305/o6kx07x3j0h.jpg" onMouseover="src='https://images.priceoye.pk/tecno-pop-3-pakistan-priceoye-1xa49.jpg'" onMouseout="src='https://olist-uc.feednews.com/upload/20200305/o6kx07x3j0h.jpg'">
@@ -143,6 +143,62 @@
             </tr>
         </tbody>
     </table>
+    <div class="container my-5">
+        <h2 class="text-center">Chapter # 49-52</h2>
+        <h3 class="text-center mb-5">1. Create a signup form and display form data in your web page on submission.</h3>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputFName">First Name</label>
+                    <input type="text" class="form-control" id="inputFName">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputLName">Last Name</label>
+                    <input type="text" class="form-control" id="inputLName">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="info()">Sign in</button>
+        </form>
+    </div>
+
+    <div id="output" class="container my-5 bg-light py-5">
+        <h3>Form Output</h3>
+    	<p id="FullName"></p>
+        <p id="Email"></p>
+        <p id="Address"></p>
+    	
+    </div>
+
+    <div id="details" class="text-center container">
+    	<p> Name : Dettol</p>
+    	<p> Item ID : 101</p>
+    	<a href="javascript:void(0);" onClick="detail();"><em>Click to get benefits.</em></a>
+
+    	
+    </div>
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
