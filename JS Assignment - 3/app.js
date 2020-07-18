@@ -1,4 +1,4 @@
-// // Assignment # 38-44
+// // Assignment # 38-42
 
 // // 1. Write a custom function power ( a, b ), to calculate the value of a raised to b.
 
