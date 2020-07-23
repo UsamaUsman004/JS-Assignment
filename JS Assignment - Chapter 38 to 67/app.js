@@ -216,4 +216,27 @@ function detail() {
 
 // 3. In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details and show each student detail in table. Each row of table must contain a delete button and an edit button. On click on delete button entire row should be deleted. On click on edit button, a hidden form will appear with the values of that row
 
+function insertData(){
+    var myTable = document.getElementById('dataTable')
+    myTable.setAttribute("border","1")
+
+    var createRow = document.createElement('tr');
+    myTable.appendChild(createRow);
+
+    var first = document.getElementById('FName').value;
+    var firstText = document.createTextNode(first)
+
+
+    var createFirstData = document.createElement('td');
+    createRow.appendChild(createFirstData);
+    createFirstData.appendChild(firstText);
+
+    var last = document.getElementById('LName').value;
+    var lastText = document.createTextNode(last);
+
+    var createLastData = document.createElement('td');
+    createRow.appendChild(createLastData);
+    createLastData.appendChild(lastText)
+
+}
 
