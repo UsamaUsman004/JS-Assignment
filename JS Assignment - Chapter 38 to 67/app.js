@@ -238,5 +238,22 @@ function insertData(){
     createRow.appendChild(createLastData);
     createLastData.appendChild(lastText)
 
+    var dltCol = document.createElement('td');
+    createRow.appendChild(dltCol);
+    var delBtn = document.createElement("button");
+    delBtn.setAttribute('class', 'btn btn-primary float-right ml-1');
+    delBtn.setAttribute('onclick', 'rmvRow(this)');
+    var icon = document.createElement("i");
+    icon.setAttribute('class', 'fa fa-trash');
+    icon.setAttribute('aria-hidden', 'true')
+    delBtn.appendChild(icon);
+    dltCol.appendChild(delBtn);
+
 }
+
+function rmvRow(myBtn) {
+    var dataTable = document.getElementById('dataTable');
+    dataTable.deleteRow(myBtn.parentNode.parentNode.rowIndex); // buttton -> td -> tr
+}
+
 
