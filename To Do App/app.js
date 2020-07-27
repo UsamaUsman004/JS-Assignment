@@ -5,8 +5,7 @@ function addTodo() {
 
     if (todo_item.value == "") {
         alert('Please Insert Element');
-    } 
-    else {
+    } else {
 
         var li = document.createElement('li');
         var listText = document.createTextNode(todo_item.value)
@@ -58,6 +57,11 @@ function deleteAll() {
 function editItem(e) {
     var val = e.parentNode.firstChild.nodeValue;
     var editValue = prompt("Enter the value", val);
-    e.parentNode.firstChild.nodeValue = editValue;
+    if (editValue== "") {
+        alert('Please Insert Element');
+    } else {
+        e.parentNode.firstChild.nodeValue = editValue;
+    }
+
 
 }
